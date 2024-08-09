@@ -5,7 +5,14 @@ document.addEventListener('DOMContentLoaded', function(){
     const frame = document.getElementById('slider-frame');
     const slider = document.getElementById('slider');
     const target = document.getElementById('rectangle-5');
-    
+    const zones = [
+        document.getElementById('zone-line-top'), 
+        document.getElementById('zone-line-bottom')
+    ];
+
+   
+    const [zoneTop, zoneBottom] = zones
+
     let idSlider = null;
     
     
@@ -67,29 +74,21 @@ document.addEventListener('DOMContentLoaded', function(){
         }, 10);
     }
 
+    
     const moveTarget = () => {
-        
-        const box = frame.getBoundingClientRect()
-        const minLeft = box.left
-        const maxRight = box.right
-
-        const RightPos = Math.floor(Math.random() * (maxRight + 1))
-        const leftPos = Math.floor(Math.random())
-        
-
-       
-
-        
-        
-
-        
-            
+        let random = Math.floor(Math.random() * -250)
+        target.style.transform = `translateX(${random}px)`
+        zones.style.transform = `translateX(${random}px)`
+        console.log( target.style.transform = `translateX(${random}px)`)    
     }
     
     
-
-    moveTarget()
-    moveSlider();
+    function update(){
+        moveTarget()
+        moveSlider();
+    }
+    
+    update()
     
         
 
