@@ -33,14 +33,14 @@ body {
   position: absolute;
   left: 54px;
   top: 6px;
-  box-shadow: 0px 4px 9px 0px rgba(49, 192, 176, 0.2);
+  box-shadow: 0px 4px 9px 0px rgba(49, 192, 82, 0.2);
 }
 
 .slider {
   background: radial-gradient(
     closest-side,
-    rgba(189, 217, 214, 1) 0%,
-    rgba(0, 159, 141, 1) 100%
+    rgb(167, 237, 183) 0%,
+    rgb(24, 159, 0) 100%
   );
   border-radius: 10px;
   width: 42px;
@@ -66,7 +66,7 @@ body {
 .zone-line {
   height: 4px;
   width: 100%;
-  background-color: #00bfa5;
+  background-color: rgb(0, 191, 29);
 }
 
 .rectangle-5 {
@@ -89,9 +89,9 @@ body {
 .rectangle-7 {
   background: radial-gradient(
     closest-side,
-    rgba(0, 159, 141, 1) 0%,
-    rgba(49, 192, 176, 1) 51.499998569488525%,
-    rgba(0, 159, 141, 1) 100%
+    rgb(0, 159, 40) 0%,
+    rgb(49, 192, 82) 51.499998569488525%,
+    rgb(0, 159, 48) 100%
   );
   border-radius: 10px;
   width: 56px;
